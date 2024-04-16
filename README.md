@@ -77,6 +77,12 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. We may skip the interface for the Observer pattern if we're looking for simplicity and we're sure things won't change much. However, an interface gives us a neat flexibility for the future, making it easier to expand and swap things out.
+
+2. Vec or DashMap?: If we're keeping a small list and don't care much about the speed of checking or updating items, a Vec might do just fine. But if our list is growing and we want quick lookups and updates, DashMap is our friend because it does all that efficiently
+
+3. DashMap or Singleton pattern?: DashMap is built to handle multiple threads without breaking a sweat, which is super handy in Rust. Singleton could work, but it's more about limiting ourself to one instance than managing threads. So, unless we have a strong reason to restrict to a single instance, DashMap is usually the better choice in Rust for keeping things thread-safe without the extra hassle.
+
 
 #### Reflection Publisher-2
 
