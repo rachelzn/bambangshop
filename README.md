@@ -65,11 +65,11 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement unsubscribe function in Notification controller.`
     -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
-    -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
-    -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
-    -   [ ] Commit: `Implement publish function in Program service and Program controller.`
-    -   [ ] Commit: `Edit Product service methods to call notify after create/delete.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
+    -   [x] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
+    -   [x] Commit: `Implement notify function in Notification service to notify each Subscriber.`
+    -   [x] Commit: `Implement publish function in Program service and Program controller.`
+    -   [x] Commit: `Edit Product service methods to call notify after create/delete.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-3" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -92,3 +92,8 @@ This is the place for you to write reflections:
 3. How does Postman contibute?: Postman streamlines the process of testing API endpoints. It simplifies making calls to the endpoints, allowing one to verify if the program operates as expected. The most appreciated feature of Postman is the ability to organize endpoints into collections for easy testing and even to automate these tests, enhancing efficiency.
 
 #### Reflection Publisher-3
+1. Which variation of pattern is implemented?: The implementation uses the push variation of the observer pattern. Here, the NotificationService functions as the subject, actively sending updates to its observers (Subscribers) whenever there's a change.
+
+2. What are the benefits of using the observer pattern in this tutorial?: Opting for the pull method in the observer pattern helps simplify the system as the subject isn't required to keep track of its observers. Moreover, this approach enhances scalability because observers pull updates only when necessary, freeing the subject from the need to simultaneously push updates to all observers.
+
+3. What are the implications of not using multi-threading?: Without multi-threading, sending notifications can become markedly slower, especially with many users accessing the application simultaneously. Additionally, the available hardware resources are not fully leveraged, potentially leading to inefficiencies.
