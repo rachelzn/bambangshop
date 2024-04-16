@@ -50,20 +50,20 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Publisher)
 -   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Subscriber model struct.`
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Subscriber repository.`
-    -   [ ] Commit: `Implement list_all function in Subscriber repository.`
-    -   [ ] Commit: `Implement delete function in Subscriber repository.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
+    -   [x] Commit: `Create Subscriber model struct.`
+    -   [x] Commit: `Create Notification model struct.`
+    -   [x] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
+    -   [x] Commit: `Implement add function in Subscriber repository.`
+    -   [x] Commit: `Implement list_all function in Subscriber repository.`
+    -   [x] Commit: `Implement delete function in Subscriber repository.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -85,5 +85,10 @@ This is the place for you to write reflections:
 
 
 #### Reflection Publisher-2
+1. Why separate Service and Repository from Model?: The separation is key for ensuring the code is easier to maintain, scale, and test, adhering to fundamental design principles like the Single Responsibility Principle (SRP), Separation of Concerns (SoC), and Don't Repeat Yourself (DRY). It enables a cleaner organization of code, simplifies maintenance, and better accommodates changes as the system grows more complex.
+
+2. What if only Model is used?: Relying solely on the Model would likely bloat its responsibilities, compounding complexity and diminishing maintainability and modularity. Models would then be overburdened with both business logic and data access tasks, leading to a convoluted codebase that's tougher to expand or alter.
+
+3. How does Postman contibute?: Postman streamlines the process of testing API endpoints. It simplifies making calls to the endpoints, allowing one to verify if the program operates as expected. The most appreciated feature of Postman is the ability to organize endpoints into collections for easy testing and even to automate these tests, enhancing efficiency.
 
 #### Reflection Publisher-3
